@@ -70,40 +70,28 @@ Requirements:
 - Derive expected rows from TECHSPEC only.
 ```
 
-## Prompt: Dataform unit tests from TECHSPEC
+## Prompt: Dataform unit/integration tests from TECHSPEC
 
 ```text
-Use `/Users/wayne/Repo/github/agentic/agentic_bigquery_unit_testing/SKILL.md` as the governing rules.
+Use skill agentic_bigquery_unit_testing as the governing rules.
 
-Please create Dataform unit tests from TECHSPEC for the target model(s).
+Please create Dataform unit/integration tests from TECHSPEC for the target model(s).
 
 Required inputs:
 1) TECHSPEC path: <path_to_TECHSPEC.md>
 2) Dataform project path: <path_to_dataform_project>
-3) Target model(s): <model_name_or_list>
-
-Requirements:
-- Use Dataform `config { type: "test" }` SQLX format.
-- Write tests under `<dataform_project>/definitions/tests/`.
-- Derive expected rows from TECHSPEC only.
 ```
 
-## Prompt: dbt integration tests for final models (default final-model mode)
+## Prompt: dbt unit/integration tests for final models (default final-model mode)
 
 ```text
-Use `/Users/wayne/Repo/github/agentic/agentic_bigquery_unit_testing/SKILL.md` as the governing rules.
+Use skill agentic_bigquery_unit_testing as the governing rules.
 
-Please create pytest integration tests for final model(s) in this dbt project from TECHSPEC.
+Please create pytest unit/integration tests for final model(s) in this dbt project from TECHSPEC.
 
 Required inputs:
 1) TECHSPEC path: <path_to_TECHSPEC.md>
 2) dbt project path: <path_to_dbt_project>
-3) Target final model(s): <model_name_or_list>
-
-Requirements:
-- Mock source entities defined in TECHSPEC.
-- Run dbt pipeline for selected final model(s) with dependencies.
-- Assert final output rows from TECHSPEC-derived expected results.
 ```
 
 Run dbt integration tests:
