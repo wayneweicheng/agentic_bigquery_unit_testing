@@ -52,24 +52,6 @@ Install and configure the tools needed by your framework:
 3. Review generated test files.
 4. Run tests in your pipeline project.
 
-## Prompt: dbt unit tests from TECHSPEC
-
-```text
-Use `/Users/wayne/Repo/github/agentic/agentic_bigquery_unit_testing/SKILL.md` as the governing rules.
-
-Please create dbt unit tests from TECHSPEC for the target model(s).
-
-Required inputs:
-1) TECHSPEC path: <path_to_TECHSPEC.md>
-2) dbt project path: <path_to_dbt_project>
-3) Target model(s): <model_name_or_list>
-
-Requirements:
-- Use dbt `unit_tests:` YAML format.
-- Write tests under `<dbt_project>/models/tests/`.
-- Derive expected rows from TECHSPEC only.
-```
-
 ## Prompt: Dataform unit/integration tests from TECHSPEC
 
 ```text
@@ -82,7 +64,7 @@ Required inputs:
 2) Dataform project path: <path_to_dataform_project>
 ```
 
-## Prompt: dbt unit/integration tests for final models (default final-model mode)
+## Prompt: dbt unit/integration tests from TECHSPEC
 
 ```text
 Use skill agentic_bigquery_unit_testing as the governing rules.
