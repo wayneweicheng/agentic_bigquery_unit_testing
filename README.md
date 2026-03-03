@@ -92,18 +92,6 @@ Install and configure the tools needed by your framework:
 3. Review generated test files.
 4. Run tests in your pipeline project.
 
-## Prompt: Dataform Pipeline E2E tests from TECHSPEC
-
-```text
-Use skill agentic_bigquery_unit_testing as the governing rules.
-
-Please create Dataform Pipeline E2E tests from TECHSPEC for the target model(s).
-
-Required inputs:
-1) TECHSPEC path: <path_to_TECHSPEC.md>
-2) Dataform project path: <path_to_dataform_project>
-```
-
 ## Prompt: dbt Pipeline E2E tests from TECHSPEC
 
 ```text
